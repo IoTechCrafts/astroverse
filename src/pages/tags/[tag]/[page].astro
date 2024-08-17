@@ -5,6 +5,8 @@ import PostCard from "@components/CommonCard.astro";
 import Pagination from "@components/Pagination.astro";
 import { getTagMetadata } from "@consts";
 
+import { baseUrl } from '../../../utils/baseUrl.js';
+
 export async function getStaticPaths() {
   const allPosts = await getCollection("posts");
   const uniqueTags = [
@@ -55,7 +57,7 @@ const { title, description } = getTagMetadata(params.tag);
     urlNext={page.currentPage < page.lastPage
       ? `/tags/${params.tag}/${page.currentPage + 1}`
       : null}
-    basePath={`/tags/${params.tag}`}
+    basePath={baseUrl(`/tags/${params.tag}`)}
     maxDisplayedPages={5}
   />
 </BaseLayout>
