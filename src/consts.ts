@@ -11,6 +11,12 @@ export const Tags_TITLE = "AstroVerse - All Tags";
 export const Tags_DESCRIPTION =
   "AstroVerse - All tags and the count of articles related to each tag";
 
+const basePath = '/astroverse'; // Adjust this as necessary for your deployment
+
+function baseUrl(path: string): string {
+  return `${basePath}${path}`;
+}
+
 // Tags Page Metadata, src/pages/tags/[tag]/[page].astro
 export function getTagMetadata(tag: string) {
   return {
@@ -29,16 +35,16 @@ export function getCategoryMetadata(category: string) {
 
 // Header Links, src/components/Header.astro
 export const HeaderLinks = [
-  { href: "/astroverse/category/One/1/", title: "One" },
-  { href: "/astroverse/category/Two/1/", title: "Two" },
-  { href: "/astroverse/category/Three/1/", title: "Three" },
+  { href: baseUrl("/category/One/1/"), title: "One" },
+  { href: baseUrl("/category/Two/1/"), title: "Two" },
+  { href: baseUrl("/category/Three/1/"), title: "Three" },
 ];
 
 // Footer Links, src/components/Footer.astro
 export const FooterLinks = [
-  { href: "/astroverse/posts/why-astro/", title: "Astro" },
-  { href: "/astroverse/posts/tailwind-typography/", title: "Tailwind" },
-  { href: "/astroverse/tags/", title: "Tags" },
+  { href: baseUrl("/posts/why-astro/"), title: "Astro" },
+  { href: baseUrl("/posts/tailwind-typography/"), title: "Tailwind" },
+  { href: baseUrl("/tags/"), title: "Tags" },
 ];
 
 // Social Links, src/components/Footer.astro
