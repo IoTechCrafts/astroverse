@@ -10,6 +10,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://iotechcrafts.github.io/",
+  base: '/astroverse/', 
   trailingSlash: "always",
   prefetch: {
     prefetchAll: true,
