@@ -3,7 +3,7 @@
 
 // Base Page Metadata, src/layouts/BaseLayout.astro
 export const BRAND_NAME = "AstroVerse";
-export const SITE_TITLE = "AstroVerse";
+export const SITE_TITLE = "Visual Blog | AstroVerse";
 export const SITE_DESCRIPTION = "An Astro Theme for Visual Storytelling";
 
 // Tags Page Metadata, src/pages/tags/index.astro
@@ -29,9 +29,9 @@ export function getCategoryMetadata(category: string) {
 
 // Header Links, src/components/Header.astro
 export const HeaderLinks = [
-  { href: "/category/One/1/", title: "One" },
-  { href: "/category/Two/1/", title: "Two" },
-  { href: "/category/Three/1/", title: "Three" },
+  { href: "/astroverse/category/One/1/", title: "One" },
+  { href: "/astroverse/category/Two/1/", title: "Two" },
+  { href: "/astroverse/category/Three/1/", title: "Three" },
 ];
 
 // Footer Links, src/components/Footer.astro
@@ -50,7 +50,7 @@ export const SocialLinks = [
     label: "Twitter",
   },
   {
-    href: "https://github.com/isooosi",
+    href: "https://github.com/IoTechCrafts",
     icon: "tabler:brand-github",
     label: "GitHub",
   },
