@@ -1,3 +1,16 @@
+<div align="center">
+
+[![CI/CD to Github Pages](https://github.com/IoTechCrafts/astroverse/actions/workflows/deploy.yml/badge.svg)](https://github.com/IoTechCrafts/astroverse/blob/main/.github/workflows/deploy.yml)
+[![Astro npm version](https://badge.fury.io/js/astro.svg)](https://badge.fury.io/js/astro)
+
+ <a href="https://github.com/IoTechCrafts/astroverse/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/IoTechCrafts/astroverse"></img></a>
+  <a href="https://github.com/IoTechCrafts/astroverse/commits/main">
+    <img src="https://img.shields.io:/github/last-commit/IoTechCrafts/astroverse"></img></a>
+
+</div>
+---
+
 ## 🌍Language Versions / 语言版本
 
 🇺🇸[English](README.md) 🇨🇳[中文](README_CN.md)
